@@ -1,8 +1,0 @@
-package Tut;
-
-public class TileMapFECase {
-	public Image[][] tileset;
-	
-	
-
-}
