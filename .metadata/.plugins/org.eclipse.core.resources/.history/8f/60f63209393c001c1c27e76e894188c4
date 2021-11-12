@@ -1,0 +1,44 @@
+package Tut;
+
+import java.io.File;  
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.*;
+import javafx.stage.*;
+import javafx.scene.media.*;
+import javafx.geometry.Pos;
+import javafx.scene.text.*;
+
+public class Main extends Application {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("Tut.fxml"));
+        GridPane grid = new GridPane();
+        grid.setAlignment(Pos.CENTER);
+        
+        Text introtitle = new Text("Rowan's Attempt at CS");
+
+        
+        String intropath = "/Users/marth/eclipse-workspace/Fire Emblem Start/src/FE Three Houses - Main Theme.mp3";
+      
+        Media introsong = new Media(new File(intropath).toURI().toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(introsong);  
+        mediaPlayer.play();
+        
+        Scene scene = new Scene(root, 600, 400);
+        primaryStage.setTitle("Fire Emblem Start");
+        scene.getStylesheets().add("TB.css");
+        primaryStage.setScene(scene);
+        primaryStage.show();    
+
+    }
+    
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+

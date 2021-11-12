@@ -1,0 +1,10 @@
+package Tut;
+
+public class CharacterClass {
+	public int movement;
+	
+	public void move(String input) {
+		
+	}
+
+}

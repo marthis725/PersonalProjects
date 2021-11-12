@@ -1,0 +1,20 @@
+/*
+    Document   : Currentbackground.css
+*/
+
+
+.root {
+    -fx-background-image: url("THWall.jpg");
+    -fx-background-size: 800 600;
+    -fx-background-position: center center;
+}
+
+@font-face {
+    font-family: 'ChiaroStd-B';
+    src: url("ChiaroStd-B.otf");
+}
+
+#Titlescreen {
+    -fx-font: 50px 'ChiaroStd-B';
+    -fx-fill: linear-gradient(to bottom, #ffffff , #fffff0);
+}

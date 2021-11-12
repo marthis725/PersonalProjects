@@ -1,0 +1,31 @@
+package Tut;
+
+public class CharacterClass {
+	/* Basic features */
+	public String Cname;
+	
+	/* Stats map which contains HP, Atk, Def, and Mov */
+	public int maxlevel;
+	public int movement;
+	public int x;
+	public int y;
+	
+	public makeCharacter(String givenname) {
+		this.Cname = givenname;
+		this.maxlevel = 20;
+		this.movement = 5;
+	}
+	
+	public void move(String input) {
+		
+	}
+	
+	public int getx() {
+		return this.x;
+	}
+	
+	public int gety() {
+		return this.y;
+	}
+
+}

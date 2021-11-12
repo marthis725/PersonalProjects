@@ -1,0 +1,68 @@
+package Tut;
+
+import java.io.File;  
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.*;
+import javafx.stage.*;
+import javafx.scene.media.*;
+import javafx.geometry.Pos;
+import javafx.scene.text.*;
+
+public class Main extends Application {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        GridPane grid = new GridPane();
+        grid.setHgap(10);
+        grid.setVgap(10);
+        grid.setAlignment(Pos.CENTER);
+        
+        /* Sets up texts */
+        Text introtitle = new Text("Click anywhere to Start");
+        Font.loadFont(getClass().getResourceAsStream("ChiaroStd-B"), 10);
+        grid.add(introtitle, 0, 0, 2, 1);
+        
+        /* Sets up buttons for tilescreen; currently disabled */
+        /* Button startgame = new Button("Start Game");
+        grid.add(startgame, 0, 0); */
+        
+        /* Plays Title Screen music */
+        String intropath = "/Users/marth/eclipse-workspace/Fire Emblem Start/src/FE Three Houses - Main Theme.mp3";
+      
+        Media introsong = new Media(new File(intropath).toURI().toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(introsong);  
+        mediaPlayer.play();
+        
+        /* Displays scene, which uses CSS stylesheet */
+        Scene scene = new Scene(grid, 800, 600);
+        primaryStage.setTitle("Fire Emblem Start");
+        scene.getStylesheets().add("TB.css");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        
+        /*  */
+
+    }
+    
+    public void loadlevel1(Stage level1, GridPane grid) {
+    	
+    	
+    	String level1path = "/Users/marth/eclipse-workspace/Fire Emblem Start/src/FE New Mystery - Endless Battle";
+        
+        Media level1song = new Media(new File(level1path).toURI().toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(level1song);  
+        mediaPlayer.play();
+        
+        Scene scene1 = new Scene(grid, 800, 600);
+        scene1.getStylesheets().add("TB.css");
+        
+    }
+    
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+

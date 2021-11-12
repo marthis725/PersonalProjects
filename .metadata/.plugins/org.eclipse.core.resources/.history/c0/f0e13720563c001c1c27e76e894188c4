@@ -1,0 +1,8 @@
+/*
+    Document   : Currentbackground.css
+*/
+
+
+.root {
+    -fx-background-image: url("THWall.jpg");
+}

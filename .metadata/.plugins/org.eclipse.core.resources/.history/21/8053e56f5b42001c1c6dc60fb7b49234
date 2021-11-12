@@ -1,0 +1,32 @@
+package Tut;
+
+import javafx.scene.image.Image;
+
+public class TileMapFECase {
+	public TileMap tilemap;
+	
+	public Image[][] tileset;
+	
+	public TileMap(int w, int h) {
+		tileset = new Image[w][h];
+		
+	}
+	
+	public Image gettile(int w, int h) {
+		return tileset[w][h];
+	}
+	
+	public void set(int w, int h, Image me) {
+		tileset[w][h] = me;
+	}
+	
+	public int getw() {
+		return tileset.length;
+	}
+	
+	public int geth() {
+		return tileset[0].length;
+	}
+	
+
+}

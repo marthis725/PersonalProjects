@@ -1,0 +1,6 @@
+package Tut;
+
+public class Avatar extends CharacterClass {
+	
+
+}

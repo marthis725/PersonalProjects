@@ -1,0 +1,9 @@
+/*
+    Document   : Currentbackground.css
+*/
+
+
+.root {
+    -fx-background-image: url("THWall.jpg");
+    -fx-background-position: center center;
+}

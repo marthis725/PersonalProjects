@@ -1,0 +1,28 @@
+package Tut;
+
+public class CharacterClass {
+	public int movement;
+	public String Cname;
+	public int maxlevel;
+	public int x;
+	public int y;
+	
+	public makeCharacter(String givenname) {
+		this.Cname = givenname;
+		this.maxlevel = 20;
+		this.movement = 5;
+	}
+	
+	public void move(String input) {
+		
+	}
+	
+	public int getx() {
+		return this.x;
+	}
+	
+	public int gety() {
+		return this.y;
+	}
+
+}

@@ -1,0 +1,20 @@
+/*
+    Document   : Currentbackground.css
+*/
+
+
+.root {
+    -fx-background-image: url("THWall.jpg");
+    -fx-background-size: 800 600;
+    -fx-background-position: center center;
+}
+
+@font-face {
+    font-family: "FOT-ChiaroStd-B";
+    src: url("graphics/FOT-ChiaroStd-B.otf");
+}
+
+.text {
+	-fx-font-family: 'FOT-ChiaroStd-B';
+	
+}

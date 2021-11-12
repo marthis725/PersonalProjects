@@ -1,0 +1,14 @@
+package Tut;
+
+import javafx.scene.image.Image;
+
+public class TileMapFECase {
+	public int width;
+	public int height;
+	
+	public Image[][] tileset;
+	
+	
+	
+
+}
